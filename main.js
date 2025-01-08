@@ -21,7 +21,7 @@ let contenidoCaja = [] //Este se mostrara al llegar a 5 emotes, copando no solo 
 // Creo mi propia funcion para resolver el problema
 function addEmote (emote) {
     contenidoArray.push(emote) //cada vez que presione el boton se iran guardando en el array los emotes
-    contenido.textContent = contenidoCaja + contenidoArray.join() //esto permitira que emotes y cajas sean mostradas en pantallas juntas. Utilizo .join() para convertir en string
+    contenido.textContent = contenidoCaja.join("") + contenidoArray.join("") //esto permitira que emotes y cajas sean mostradas en pantallas juntas. Utilizo .join() para convertir en string
 
     
     if (contenidoArray.length >= 6) {
